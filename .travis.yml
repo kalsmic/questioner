@@ -20,6 +20,8 @@ install:
 
 before_script:questioner
   - psql -c 'create database travis_ci_db;' -U postgres
+  - psql -c 'ALTER USER travis CREATEDB'; -U postgres
+
 
 #command to run the test suite
 script:
