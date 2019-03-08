@@ -9,7 +9,7 @@ services: postgresql
 env:
   global:
     - DJANGO_SETTINGS_MODULE="questioner.travis_ci_settings"
-    - PYTHONPATH="/home/travis/build/kbjude/questioner"
+    - PYTHONPATH="/home/travis/build/kalsmic/questioner"
     - PIP_USE_MIRRORS=true
   matrix:
     - Django==2.0.13 DB=postgresql
